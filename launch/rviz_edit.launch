@@ -1,11 +1,11 @@
 <launch>
 
-	<arg name="map_name"	default="crossroad"  />
+	<arg name="map_name"	default="room_mini"  />
 	<arg name="map_pgm"	default="$(arg map_name).pgm"  />
 	<arg name="map_yaml" default="$(arg map_name).yaml" />
 	<arg name="load_path"		default="$(find rviz_map_editor)/original_map/$(arg map_pgm)  "   />        
 	<arg name="save_path"		default="$(find rviz_map_editor)/edited_map/$(arg map_pgm)  "   />
-	<arg name="map" default="crossroad.yaml" />
+	
 
 	<node name="map_server" pkg="map_server" type="map_server" args="$(find rviz_map_editor)/original_map/$(arg map_yaml)"/>
 
